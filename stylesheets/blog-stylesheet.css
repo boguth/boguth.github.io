@@ -1,0 +1,22 @@
+#body{
+  padding-top: 30px;
+  padding-left: 60px;
+  width: 35em;
+  margin-left: 10em;
+}
+
+h4{
+  margin-top: -0.8em;
+  padding-left: 3em;
+}
+
+#previous{
+  padding-top: 3em;
+  display: inline-block;
+}
+
+#blog-entry{
+  float: right;
+  display: inline-block;
+  margin-right: 0em;
+}
