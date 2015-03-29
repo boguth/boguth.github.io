@@ -1,22 +1,44 @@
 #body{
   padding-top: 30px;
-  padding-left: 60px;
-  width: 23em;
+  padding-left: 20px;
+  width: 70vw;
   margin-left: 10em;
 }
 
-h4{
+h2{
   margin-top: -0.8em;
-  padding-left: 3em;
+  padding-left: 2em;
+  font-size:0.9em;
 }
 
 #previous{
-  padding-top: 3em;
+  padding-top: 1em;
   display: inline-block;
+}
+
+#previous ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#previous a{
+   text-decoration: none;
+   color: black;
+   color: #84A6B2;
+   display: inline-block;
+}
+
+#previous ul li a.visited {
+  color:#518fff;
+}
+#previous h3{
+  font-weight:lighter;
+  color: #84A6B2;
 }
 
 #blog-entry{
   float: right;
   display: inline-block;
-  margin-right: 0em;
+  margin-right: 10vw;
+  width: 370px;
 }
