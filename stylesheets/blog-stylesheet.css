@@ -5,6 +5,15 @@
   margin-left: 10em;
 }
 
+h1 a{
+  text-decoration: none;
+  color: black;
+}
+
+h1 a:hover{
+  color: #84A6B2;
+}
+
 h2{
   margin-top: -0.8em;
   padding-left: 2em;
