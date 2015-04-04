@@ -26,7 +26,7 @@
    <section id="blog-entry">
     <h3>April 5th, Arrays and Hashes!</h3>
      <p>
-      Ah, arrays. Ah, hashes. Like the four horsemen of the apocalypse - if there were only two horsemen, and if they weren't horesmen but were instead ruby objects, and if they didn't herald the <strong>END</strong> but instead stored things in an easily accessible - arrays and hashes are powerful elements that gallop across the web, bringing about the end of bad data storage.
+      Ah, arrays. Ah, hashes. Like the four horsemen of the apocalypse - if there were only two horsemen, and if they weren't horesmen but were instead ruby objects, and if they didn't herald the <strong>end</strong> but instead stored things in an easily accessible way - arrays and hashes are powerful elements that gallop across the web, bringing about the end of bad data storage.
      </p>
      <br />
      <img src="../images/idiot.gif" height="200px" width="250px"/ alt="farley idiot">
@@ -34,21 +34,48 @@
      <p>
       Well, I was at least right about one thing. Arrays and hashes do store data in an easily accessible way. Arrays and hashes operate very similarly. To understand them, it's probably easiest to start by showing them.
      </p>
-     <code>array=[0,1,2,3,4]</code>
+     <code>array = [0,1,2,3,4]</code>
       <p>
         That is an array. But I could just have easily stored strings instead of numbers using the same syntax. For example:
       </p>
-      <code>array=["worst","best","wedding dress"]</code>
+      <code>array = ["worst","best","wedding dress"]</code>
         <p>
-          See? Both of those are arrays, but in one case the array is storing numbers and in the other its storing text. Note that the word array I've put to the left of the equal sign is totally arbitrary. I named it array because that's what we're talking about, but I could have easily called it x, y, z, or the_four_horsemen_of_the_apocalypse.
+          See? Both of those are arrays, but in one case the array is storing numbers and in the other its storing text. Note that the word array I've put to the left of the equal sign is totally arbitrary. I named it array because that's what we're talking about, but I could have easily called it x, y, z, or the_four_horsemen_of_the_apocalypse.There's another way of making array. It looks like this:
         </p>
+        <code>array = Array.new</code>
         <p>
-          Each thing that's stored in array has a position - like kids in a line, the first is the worst, the second is the best, and the third is the one in the wedding dress. To use our most recent example, "hi" is in the first position, "this," is in the second, and so on. pretty clear, right? It would be except that in ruby, an element's position is referred to as its <strong>index</strong>. And, the thing about indexes (indices?) is that they don't start with one. They start with zero. "hi" has an index of 0. "this" has an index of 1, and so on. So 0 is the hero, first is the worst, and second is just second because I say so.
+          So stick that in your pipe and smoke it!
+        </p>
+        <h6> Moving on...</h6>
+        <p>
+           Each thing that's stored in array has a position - like kids in a line, the first is the "worst", the second is the "best", and the third is the one in the "wedding dress".  Pretty clear, right? It would be except that in ruby, an element's position is referred to as its <strong>index</strong>. And, the thing about indexes (indices?) is that they don't start with one. They start with zero. "worst" has an index of 0. "best" has an index of 1, and so on. So 0 is the "worst", first is the "best", and second is now the "wedding dress".
         </p>
         <p>
           An array's indexices can be used to reference what is being stored in that position. So, for example, if I typed:
           <code> array[1] </code>
-          The thing being stored at the 1st index would print to the screen. In this case, "this." This format of storing data is really useful, especially with the data is ordered. But what happens if the data you store doesn't go in any sort of order,
+          The thing being stored at the 1st index would get returned. In this case, "best." If, on the other hand, I type <code> array[0] </code> the thing being stored in the 0th index would get returned ("worst" in case you're too lazy to look back up at the array). This format of storing data is really useful, especially with the data is ordered. But what happens if the data you store doesn't go in any sort of order?
+        </p>
+        <h1> HASHES HAPPEN YOU MOTHER LOVER </h1>
+        <p>
+          Hashes are a lot like arrays, with a view differences. To best illustrate these differences let's consider a hypothetical. Let's say you wanna store a person's first name, middle name, last name, adress, and the name of their first girlfriend. We could just store each of those things in an array and do our best to remember that the index of 0 is their first name, the index of 1 is their middle name, the index of 2 is their last name, and so on and so forth. But that's a giant pain in the ass. It'd be a lot easier if we could type something like <code> array["firstName"]</code> and have that spit out their first name. Luckily, that's exactly what hashes let you do.
+        </p>
+        <p>
+          You can make a hash like this.
+        </p>
+        <code> hash = {"firstName" => "Bo", <br />
+                      "middleName" => "Amory", <br />
+                      "lastName" => "Guthrie",<br />
+                      "address" => "123 Street Place", <br />"hotGirlFriend" => "Janet" }
+        </code>
+        <p>
+          When you make a hash, instead of having indexes and values, you have keys and values. The keys are the "firstName", "middeName" and so on. It's all the stuff on the left of the <code>=></code>. The keys are what you can use to refer to the values. So, you can type hash["firstName"] and it'll return "Bo". Neat huh?
+        </p>
+        <p>
+          Another way you can create a hash is like this:
+        </p>
+        <code>hash = Hash.new</code>
+        <p>
+          Alrighty, that should cover the basics. For more detail, I suggest you visit google and do some good searches for ruby hashes or ruby arrays. I suggest the <a href="http://ruby-doc.org/">ruby documentation</a> as a good reference.
         </p>
    </section>
   </div>

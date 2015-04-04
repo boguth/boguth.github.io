@@ -1,7 +1,7 @@
 #body{
   padding-top: 30px;
   padding-left: 20px;
-  width: 70vw;
+  width: 65%;
   margin-left: 10em;
 }
 
@@ -48,8 +48,7 @@ h2{
 #blog-entry{
   float: right;
   display: inline-block;
-  margin-right: 10vw;
-  width: 370px;
+  width: 70%;
 }
 
 code{
