@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>the blog</title>
+  <meta charset="UTF-8">
+  <!--<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">-->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <div id="body">
+  <h1><a href="blog-template.html">the blog</a></h1>
+  <h2>tales from DBC</h2>
+
+  <div id="previous">
+   <h3> previous entries</h3>
+    <ul>
+     <li><a href="t1-git-blog.html">first</a></li>
+     <li><a href="c1-chefs-kitchen.html">second</a></li>
+     <li><a href="t2-css-design.html">third</a></li>
+     <li><a href="t3-arrays-hashes.html">fourth</a></li>
+     <li><a href="c3_thinking-style.html">fifth</a></li>
+     <li><a href="t4-enumerable-methods.html">sixth</a></li>
+    </ul>
+    <a href="../index.html">back home</a>
+  </div>
+
+   <section id="blog-entry">
+    <h3>Saturday, April 11th. The year of our Lord, 2015 and the blog of our class, Enumerables.</h3>
+     <p>
+      Hello. It's me again, here to talk about none other than the Enumerable class. Specifically, I'll be convering the cycle method of the enurables class. Enumerable is a module - a group of methods you can use across multiple classes - that provides methods that can traverse, sort, or order arrays, hashes, and strings.
+     </p>
+     <h4> The Cycle Method of the Enumerable Class </h4>
+     <p>
+      The cycle method of the enumerable class performs a traversal function, going through an array or hash and spitting out values over and over, or at least until you say stop. Here's what it looks like in action. <br />
+      <code>
+        [1,2,3].cycle {|x| puts x} <br />
+        Output: 1 2 3 1 2 3 1 2 3 1 2 3...
+      </code>
+        What's happening is that the cycle method is going through each element of the array it was called on (the one that contains 1,2, and 3) and putsing out each element to the screen over and over to infinity. The problem with this is that we don't necessarily want it to go on to infinity, right? Right.
+     </p>
+     <p>
+      So, we give it a limit. We say to cycle, "Cycle, I want you to only go through that array twice." And the way we say that in ruby is like this:
+      <code>
+        [1,2,3].cycle(2) {|x| puts x} <br />
+        Output: 1 2 3 1 2 3
+      </code>
+      <h4> When am I gonna use it? </h4>
+      <p>
+        I'm going to level with you. I have never used cycle before. Granted, I have been coding for only four weeks. But, I am sure I can think of a good hypothetical. I envision a form on a bank's login. The user is supposed to fill it out to apply for a loan, so he's typing in pretty sensitive information. May we - as programmers - are worried that the user is going to fill out half the form and then forget about it, leaving half of his sensitive information on the screen while he goes and browses reddit.
+      </p>
+      <p>
+      We need to prompt him to finish the form! So the way we do that is we assign all the user inputs to a hash with the field names as the keys and the user inputs as the values. We name the hash, "hash", largely because we are unimaginative. We put a timer on the web page and let's say every 90 seconds we cycle through the form and check to see if any of the fields are empty. If they are, we prompt the user to fill out the rest of the form. It'll look like this:
+      <code>
+        hash.cycle(1){|x,y| if y.empty? return "Hey, please fill out the rest of the form. Thank you."}
+      </code>
+      </p>
+      <p>
+        So there we are. An implementation of cycle. Perfect!
+      </p>
+   </section>
+  </div>
+</main>
+</html>
