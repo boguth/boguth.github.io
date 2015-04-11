@@ -40,7 +40,7 @@
         What's happening is that the cycle method is going through each element of the array it was called on (the one that contains 1,2, and 3) and putsing out each element to the screen over and over to infinity. The problem with this is that we don't necessarily want it to go on to infinity, right? Right.
      </p>
      <p>
-      So, we give it a limit. We say to cycle, "Cycle, I want you to only go through that array twice." And the way we say that in ruby is like this:
+      So, we give it a limit. We say to cycle, "Cycle, I want you to only go through that array twice." And the way we say that in ruby is like this: <br />
       <code>
         [1,2,3].cycle(2) {|x| puts x} <br />
         Output: 1 2 3 1 2 3
