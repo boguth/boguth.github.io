@@ -61,14 +61,22 @@
        Nice. Let's put all that in the class. <br /><br />
        <code>
           class Pie<br />
-            def baked=(answer)<br />
-                puts "Is the pie baked? #{answer}."<br />
+            def baked=(bakedanswer)<br />
+                @bakedanswer = bakedanswer<br />
             end<br />
             <br />
-            def tasty=(answer)<br />
-                puts "Is the pie tasty?" #{answer}."<br />
+            def tasty=(tastyanswer)<br />
+               @tastyanswer = tastyanswer<br />
             end    <br />
             <br />
+            
+            def baked?<br />
+              puts "Is your pie baked? #{@bakedanswer}."<br />
+            end<br />
+            
+            def tasty?<br />
+              puts "Is the pie tasty?" #{tastyanswer}." <br />
+            end<br />
             def eaten<br />
               puts "Your pie has been eaten."<br />
             end<br />
