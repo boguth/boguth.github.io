@@ -35,22 +35,53 @@
      </p>
      <p>
        To get a clearer picture of classes and how they work, let's pick something we would want to represent digitally. How about a pie? 
+       We write class named with capitalized first letters and define them as we would any other method: with def and end.
        <br /><code>
-         class Pie
+         def Pie
          
          end 
        </code><br />
        There's our pie class. As I mentioned, we must make some methods that define what a pie can do, and some methods that set or retrieve 
-       a pies state. 
+       a pie's state. 
      </p>
      <p>
        What are some things a pie can do?
        <ul>
          <li>It can be eaten.</li>
          <li>It can be sat on.</li>
-         <li>It can be thrown.</li>
-         <li>It can be sat down upon a window sill.</li>
+         <li>It can be placed upon a window sill.</li>
        </ul>
+       Ok cool. Now, what are some states it can have?
+       <ul>
+         <li>Baked.</li>
+         <li>Tasty.</li>
+       </ul>
+     </p>
+     <p>
+       Nice. Let's put all that in the class. <br />
+       <code>
+          def Pie
+            def baked=(answer)
+                puts "Is the pie baked? #{answer}."
+            end
+            
+            def tasty=(answer)
+                puts "Is the pie tasty?" #{answer}
+            end    
+            
+            def eaten
+              puts "Your pie has been eatem."
+            end
+            
+            def sat
+              puts "Your pie has been sat on."
+            end  
+              
+            def fifties_mommed
+              puts "Your pie has been placed upon a window sill
+            end
+         end 
+       </code> <br />
      </p>
    </section>
   </div>
