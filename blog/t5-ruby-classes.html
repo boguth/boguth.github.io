@@ -14,7 +14,7 @@
 
   <div id="previous">
    <h3> previous entries</h3>
-    <ul>
+      <ul>
      <li><a href="t1-git-blog.html">first</a></li>
      <li><a href="c1-chefs-kitchen.html">second</a></li>
      <li><a href="t2-css-design.html">third</a></li>
@@ -23,6 +23,7 @@
      <li><a href="t4-enumerable-methods.html">sixth</a></li>
      <li><a href="c4-tech-issues.html">seventh</a></li>
      <li><a href="t5-ruby-classes.html">eigth</a></li>
+     <li><a href="c5-feedback.html">ninth</a></li>
     </ul>
     <a href="../index.html">back home</a>
   </div>
@@ -30,19 +31,19 @@
    <section id="blog-entry">
     <h3>April 15th, 2015. Let's talk about classes.</h3>
      <p>
-      Classes are collections of methods that ultimately define the behavior and state of an object. In order to make a class, there must usually be 
-      two things: Methods that define what an object of that class can do, and methods to set or retrieve the state of the object. 
+      Classes are collections of methods that ultimately define the behavior and state of an object. In order to make a class, there must usually be
+      two things: Methods that define what an object of that class can do, and methods to set or retrieve the state of the object.
      </p>
      <p>
-       To get a clearer picture of classes and how they work, let's pick something we would want to represent digitally. How about a pie? 
+       To get a clearer picture of classes and how they work, let's pick something we would want to represent digitally. How about a pie?
        We write class named with capitalized first letters and define with class and end. <br />
        <br /><code>
          class Pie <br />
-         
+
          end <br />
        </code><br />
-       There's our pie class. As I mentioned, we must make some methods that define what a pie can do, and some methods that set or retrieve 
-       a pie's state. 
+       There's our pie class. As I mentioned, we must make some methods that define what a pie can do, and some methods that set or retrieve
+       a pie's state.
      </p>
      <p>
        What are some things a pie can do?
@@ -69,11 +70,11 @@
                @tastyanswer = tastyanswer<br />
             end    <br />
             <br />
-            
+
             def baked?<br />
               puts "Is your pie baked? #{@bakedanswer}."<br />
             end<br />
-            
+
             def tasty?<br />
               puts "Is the pie tasty?" #{tastyanswer}." <br />
             end<br />
@@ -88,21 +89,21 @@
             def fifties_mommed<br />
               puts "Your pie has been placed upon a window sill."<br />
             end<br />
-         end 
+         end
        </code> <br /><br />
      </p>
      <p>
-       Nice. Notice, the state setter methods are the one with the "=" sign. This doesn't always have to be the case; you can use 
-       parenthesis and pass an argument like you would do for any other method. The state getter methods function just like other methods, 
-       you call them after a period and they return your pies state (whether it's been baked or if it's tasty). 
+       Nice. Notice, the state setter methods are the one with the "=" sign. This doesn't always have to be the case; you can use
+       parenthesis and pass an argument like you would do for any other method. The state getter methods function just like other methods,
+       you call them after a period and they return your pies state (whether it's been baked or if it's tasty).
      </p>
      <p>
-       Now, we can create a buch of pie objects. For example, we could make a blueberry pie like this: blueberry_pie = Pie.new. Or, 
+       Now, we can create a buch of pie objects. For example, we could make a blueberry pie like this: blueberry_pie = Pie.new. Or,
        we could make a rhubarb pie the same way: rhubarb_pie = Pie.new. The blueberry and the rhubarb pies are both gonna have the same methods
-       but their states are completely up to you. 
+       but their states are completely up to you.
      </p>
      <p>
-       And that's the primary utility of classes - being able to create a bunch of objects with similar characteristics, that fucntion in the same way. 
+       And that's the primary utility of classes - being able to create a bunch of objects with similar characteristics, that fucntion in the same way.
      </p>
    </section>
   </div>
