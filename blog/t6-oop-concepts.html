@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>the blog</title>
+  <meta charset="UTF-8">
+  <!--<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">-->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <div id="body">
+  <h1><a href="blog-template.html">the blog</a></h1>
+  <h2>tales from DBC</h2>
+
+  <div id="previous">
+   <h3> previous entries</h3>
+    <ul>
+     <li><a href="t1-git-blog.html">first</a></li>
+     <li><a href="c1-chefs-kitchen.html">second</a></li>
+     <li><a href="t2-css-design.html">third</a></li>
+     <li><a href="t3-arrays-hashes.html">fourth</a></li>
+     <li><a href="c3_thinking-style.html">fifth</a></li>
+     <li><a href="t4-enumerable-methods.html">sixth</a></li>
+     <li><a href="c4-tech-issues.html">seventh</a></li>
+     <li><a href="t5-ruby-classes.html">eigth</a></li>
+     <li><a href="c5-feedback.html">ninth</a></li>
+     <li><a href="t6-oop-concepts.html">ten</a></li>
+     <li><a href="c6-stereotype-threat.html">eleven</a></li>
+    </ul>
+    <a href="../index.html">back home</a>
+  </div>
+
+   <section id="blog-entry">
+    <h3>April 25th - Classes vs. Modules</h3>
+     <p>
+     It's easy to get classes and modules confused. They share many similar characteristics. For example, both classes and modules are identified by capitalizing their first letter. And both contain a bunch of related methods. However, there are key difference.
+     </p>
+     <p>
+      Classes, as you probably already know, are usually created to serve a single purpose. If you are modeling a motorcycle, for example, you'd create classes to represent each motorcycle part. You would have a motor class, a wheel class, a seat class, a frame class, and so on. Within each class are methods that define its functionality. A motor class will have an on/off method and a cylinder method. A wheel class will have a turn method and a brake method. These methods determine how each instance of a motor class or wheel class behaves and interacts with other objects.
+     </p>
+     <p>
+      Modules can be looked at as a supporting partner of classes. Like classes, they contain a bunch of related methods. However, these methods aren't intended for a specific object's use. A module's methods can be used across multiple objects and classes. As such, you cannot instantiate a module. There can be no module object that acts as a receiver for module methods.
+     </p>
+     <p>
+      However, a module's methods <em>can</em> be used by other classes objects. The way this is achieved is by adding the module to a class. For example, let's say I have a module that provides a method to add a bunch of metal spikes to something. And let's say I am modeling a medieval knight. I can use that module, called the Spike module, in multiple types of classes. Using the include method, I can add Spike's methods to a flail class, for example. Or a helmet class.
+     </p>
+     <p>
+      The capability modules have to be added to multiple different classes, and therefore used by any number of objects, is a defining feature. The act of adding a modules behaviors to a class is called "mixing in." So you would say that modules have mix-in capability.
+     </p>
+     <p>
+      The second big defining feature of modules is that they provide namespaces. This vague term simply means that they provide a way to distinguish between similarly named methods. For example, if a Smart module has a think method, and a Dumb module also has a think method, the fact that "think" has the same method name isn't a problem. By specifying which namespace (module) think is a part of, the differeing functionalities between Dumb think and Smart think won't be confused.
+     </p>
+     <p>
+      This is a lot of information, and I am still wrapping my head around it. The two resources I've found that have been most helpful in learning about modules and classes are:
+      <br />
+      <ul>
+        <li><a href=http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module> Stack Overflow</a></li>
+        <li><a href="http://ruby-doc.com/docs/ProgrammingRuby/html/tut_modules.html">Good ol' Ruby Docs</a></li>
+      </ul>
+     </p>
+
+  </div>
+</main>
+</html>
