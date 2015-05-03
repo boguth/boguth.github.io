@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>the blog</title>
+  <meta charset="UTF-8">
+  <!--<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">-->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <div id="body">
+  <h1><a href="blog-template.html">the blog</a></h1>
+  <h2>tales from DBC</h2>
+
+  <div id="previous">
+   <h3> previous entries</h3>
+   <ul>
+     <li><a href="t1-git-blog.html">first</a></li>
+     <li><a href="c1-chefs-kitchen.html">second</a></li>
+     <li><a href="t2-css-design.html">third</a></li>
+     <li><a href="t3-arrays-hashes.html">fourth</a></li>
+     <li><a href="c3_thinking-style.html">fifth</a></li>
+     <li><a href="t4-enumerable-methods.html">sixth</a></li>
+     <li><a href="c4-tech-issues.html">seventh</a></li>
+     <li><a href="t5-ruby-classes.html">eigth</a></li>
+     <li><a href="c5-feedback.html">ninth</a></li>
+     <li><a href="t6-oop-concepts.html">ten</a></li>
+     <li><a href="c6-stereotype-threat.html">eleven</a></li>
+     <li><a href="t7-JavaScript.html">twelve</a></li>
+     <li><a href="c7-values.html">thirteen</a></li>
+    </ul>
+    <a href="../index.html">back home</a>
+  </div>
+
+   <section id="blog-entry">
+    <h3>May 2nd, 2015 - JavaScript vs. Ruby</h3>
+     <p>
+      Coming from ruby, my experience with JavaScript has been one marked by giant moodswings, from frustration to "a-ha" moments. What I have discoverd, so far, is that depsite the different syntax, the two languages are very similar. In fact, a lot of the same types of fundamental capabilities exist in both languages. But, where Ruby is well defined, organized, and buttoned up, JavaScript is loosey goosey and kind of weird.
+     </p>
+     <p>
+      Take, for example, classes. In Ruby, classes define a set of behaviors and all objects of a given class share those behaviors. JavaScript doesn't really have classes in such a well defined sense. It has types, which describe kinds of data (string, boolean, integer, etc.).
+     </p>
+      <p>
+     Where things get confusing is when you want to start making JavaScript "classes" of your own. You would think that if types are the equivalent of a Ruby class (sorta), you would simply create your own types. Not so. Types describe data, as we said. There can't be any more or different kinds of data than the one's already defined. So, then, how do we create our own groupings of properties and behaviors?
+     </p>
+     <p>
+      The answer is with constructor functions. Constructor functions are defined just like any other function. The only difference is that you use the word "new" in front of a constructor function when you are assigning it to a variable. Make sense? No? Okay, let's water it down.
+     </p>
+     <p>
+      This is a function: <br />
+      <code>function example(){ <br />
+            } <br />
+      </code>
+      When we want to call it or use it, we'll either type:
+      <br />
+      <code>example();</code>
+      <br />
+      Or we'll assign it to a variable and call the variable, like this.<br />
+      <code>
+        var ex = function example(){<br />
+
+      }<br />
+      ex();// calling the fuction with a variable.
+      </code>
+     </p>
+     <p>
+      Constructor function are constructed the exact same way. Except, if you use the "new" keyword instead of the word function, like this: <br />
+      <code>
+        var ex = new example(); <br />
+      </code>
+      some different things happen. To be clear, the only reason our example function is now a constructor function is because we said so. The only reason it's any different than a regular function is because when we are assigning it to a variable, we use the word "new" instead of "function."
+     </p>
+     <p>
+      "New" is a special thing. It does three primary things.
+      <h3> 1. It creates a new object.</h3>
+      The variable we used to assign <code> new exmaple(); </code> doesn't point to our constructor function. It is an object in and of itself.
+      <h3> 2. It sets a very special and usually hidden property called the Constructor property to the function object</h3>
+      What this means is that if we type <code>ex instanceof example</code> then that will return true.
+      <h3>3. It makes it so that all the objects constructed from the constructor function inherit its properties.</h3>
+      Here's where things get a bit more familiar. Just like class inheritence in Ruby, the "new" word makes all the objects created from our constructor inherit its properties. And, just like in ruby, was those properties are copied over, they are free to be used by the new object at will. Any changes you make to a child of the constructor function will not affect the constructor function, just like any changes you make to an object of a certain class won't afffect the overall class.
+     </p>
+     <p>
+      For more reading on this, feel free to check out this resource: <a href="http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/"> pivotallabs.com</a>.
+     </p>
+   </section>
+  </div>
+</main>
+</html>
