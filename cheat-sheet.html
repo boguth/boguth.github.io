@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DBC Cheat Sheet</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <section id="header">
+      <h1> Cheat Sheet</h1>
+      <ul>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Ruby</a></li>
+        <li><a href="#">Git</a></li>
+        <li><a href="#">SQL</a></li>
+      </ul>
+    </section>
+    <section id="container">
+      <section id="content">
+      <h1>JavaScript Prototypes</h1>
+      <p>
+        Source: <a href="http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/"> Javascriptissexy.com</a><br />
+        1. Every JavaScript function has a prototype property (this property is empty by default), and you attach properties and methods on this prototype property when you want to implement inheritance. This prototype property is not enumerable; that is, it isn’t accessible in a for/in loop. But Firefox and most versions of Safari and Chrome have a __proto__ “pseudo” property (an alternative syntax) that allows you to access an object’s prototype property.<br /><br /> You will likely never use this __proto__ pseudo property, but you should know that it exists and it is simply a way to access an object’s prototype property in some browsers. The prototype property is used primarily for inheritance; you add methods and properties on a function’s prototype property to make those methods and properties available to instances of that function.
+      </p>
+      <p>
+        2. The second concept with prototype in JavaScript is the prototype attribute. Think of the prototype attribute as a characteristic of the object; this characteristic tells us the object’s “parent”. In simple terms: An object’s prototype attribute points to the object’s “parent”—the object it inherited its properties from. The prototype attribute is normally referred to as the prototype object, and it is set automatically when you create a new object. <br /><br />To expound on this: Every object inherits properties from some other object, and it is this other object that is the object’s prototype attribute or “parent.” (You can think of the prototype attribute as the lineage or the parent). In the example code above, newObj‘s prototype is PrintStuff.prototype.<br /><br />
+        Note: All objects have attributes just like object properties have attributes. And the object attributes are prototype, class, and extensible attributes. It is this prototype attribute that we are discussing in this second example.
+      </p>
+      <h1> How do I make a prototype?</h1>
+      <p>
+        There are two primary ways. The first is to create an object literal. An object literal will inherit from the "motherclass" Object() and will have whatever properties you assign to it. For example:
+        <br /><br />
+        <code>
+          var newObj = {<br />
+            proerty: attribute, <br />
+            proerty: attribute, <br />
+            proerty: attribute, <br />
+            proerty: attribute <br />
+          } <br /><br />
+        </code>
+        The second way is to create a constructor function, which will be used with the keyword new to create slave objects. For example:<br /><br />
+        <code>
+          function cat(name) {<br />
+            this.name = name;<br />
+            this.talk = function() {<br />
+               alert( this.name + " say meeow!" )<br />
+             }<br />
+            }<br />
+            <br />
+            cat1 = new cat("felix")<br /><br />
+        </code>
+      </p>
+
+    </section>
+
+  </section>
+
+  </body>
+</html>
