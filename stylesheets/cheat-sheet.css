@@ -14,6 +14,7 @@ html, body{
   margin: auto;
   margin-top: -15px;
 }
+
 #header h1 {
   clear: right;
   float: left;
@@ -21,15 +22,14 @@ html, body{
   margin-top: 4%;
 }
 
-
-ul {
+#header ul {
   list-style-type: none;
   width: 70%;
   margin: auto;
   display: block;
 }
 
-ul li a{
+#header ul li a{
   text-decoration: none;
   color: #92A7B2;
   background-color: white;
@@ -44,7 +44,6 @@ ul li a{
 
 #container{
   width:77em;
-  height: 85%;
   margin: auto;
   border-width: 2px;
   border-style: solid;
@@ -54,4 +53,12 @@ ul li a{
 #content{
   width: 65%;
   margin: auto;
+  margin-left: 25%;
+}
+
+#sidebar{
+  left: 0em;
+  float: left;
+  display: inline-block;
+  margin-top: 4%;
 }
