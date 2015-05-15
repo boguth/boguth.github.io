@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>the blog</title>
+  <meta charset="UTF-8">
+  <!--<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">-->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <div id="body">
+  <h1><a href="blog-template.html">the blog</a></h1>
+  <h2>tales from DBC</h2>
+
+  <div id="previous">
+   <h3> previous entries</h3>
+    <ul>
+     <li><a href="t1-git-blog.html">first</a></li>
+     <li><a href="c1-chefs-kitchen.html">second</a></li>
+     <li><a href="t2-css-design.html">third</a></li>
+     <li><a href="t3-arrays-hashes.html">fourth</a></li>
+     <li><a href="c3_thinking-style.html">fifth</a></li>
+     <li><a href="t4-enumerable-methods.html">sixth</a></li>
+     <li><a href="c4-tech-issues.html">seventh</a></li>
+     <li><a href="t5-ruby-classes.html">eigth</a></li>
+     <li><a href="c5-feedback.html">ninth</a></li>
+     <li><a href="t6-oop-concepts.html">ten</a></li>
+     <li><a href="c6-stereotype-threat.html">eleven</a></li>
+     <li><a href="t7-JavaScript.html">twelve</a></li>
+     <li><a href="c7-values.html">thirteen</a></li>
+     <li><a href="t8-tech.html">fourteen</a></li>
+     <li><a href="c8-conflict.html">fifteen</a></li>
+     <li><a href="c9-questions.html">sixteen</a></li>
+    </ul>
+    <a href="../index.html">back home</a>
+  </div>
+
+   <section id="blog-entry">
+    <h3>May 15th - Asking the Right Questions</h3>
+     <p>
+      I asked this question of the Google+ DBC community about three weeks ago when I was first learning JavaScript: <br />
+      <blockquote>
+      Hey everyone: Can someone please explain this to me:<br />
+      <code>
+                        <br />
+          assert(             <br />
+          (typeof secretNumber === 'number'),<br />
+          "The value of secretNumber should be a number.",<br />
+          "1. "<br />
+           )<br />
+      </code><br />
+    How does javascript not see 'number' as a string? How does it know it means number?﻿ <br />
+    </blockquote>
+     </p>
+     <p> Through asking this question, and reading stack overflow's guide on how to ask good questions, I have learned that asking a question well takes forethought. To make this question, and any other question I may ask in the future, better, there are a few things that I could do.
+     </p>
+     <p>
+      First, I could have started by more thoroughly describing how I arrived at the problem. For example:
+      <blockquote>
+        "I was working through a ruby challenge and was using RSPEC to test my solution. I got the first test to pass, but I wondered how."
+      </blockquote>
+      Another thing I could have done was framed the problem more specifically. Instead of asking "How does Javascript not see 'number' as a string," I should have asked:
+      <blockquote>
+        "If you observe the code below, you'll notice that it evalutes secretNumber against 'number.' I don't understand how this can return true when secretNumber is an integer and 'number' is a string."
+      </blockquote>
+      Then I could have pasted the code below the previous paragraph.
+     </p>
+     <p>
+      Finally, another thing I could have done is researched the question online by predicting what more information would be asked of me. For example, if someone were to ask "are you using Javascript," that would have led me to research how Javascript evalutes types. I would have discovered that when javascript compared types, it converts those types to strings. So when it sees a number, the type is not a reserved word number, it's 'number.'
+     </p>
+     <p>
+      Essentially, asking a good question requires anticipating what the audience will need to answer it, doing your homework in terms of researching all aspects of the problem, and then framing the question with enough background and context to eliminate any ambiguity.
+     </p>
+   </section>
+  </div>
+</main>
+</html>

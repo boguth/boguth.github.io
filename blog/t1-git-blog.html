@@ -2,16 +2,17 @@
 <head>
   <title>Here 'tis. This first blog post.</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
 
 <main>
-  <h1>Post Number One</h1>
-  <h2>The first subtitle.</h2>
-  <h4>Saturday, March 21th 2015 </h4>
+  <div id="body">
+  <h1><a href="blog-template.html">the blog</a></h1>
+  <h2>tales from DBC</h2>
 
-  <section>
-     <ul>
+  <div id="previous">
+   <h3> previous entries</h3>
+  <ul>
      <li><a href="t1-git-blog.html">first</a></li>
      <li><a href="c1-chefs-kitchen.html">second</a></li>
      <li><a href="t2-css-design.html">third</a></li>
@@ -27,19 +28,27 @@
      <li><a href="c7-values.html">thirteen</a></li>
      <li><a href="t8-tech.html">fourteen</a></li>
      <li><a href="c8-conflict.html">fifteen</a></li>
+     <li><a href="c9-questions.html">sixteen</a></li>
     </ul>
-    <p>
-     Version control is a method of tracking changes to a body of code. This allows coders to both keep up with the changes they've made, as well as revert to older versions of a chunk of code if they are stuck.
+    <a href="../index.html">back home</a>
+  </div>
+
+   <section id="blog-entry">
+    <h3>Version Control and Git</h3>
+     <p>
+      Version control is a method of tracking changes to a body of code. This allows coders to both keep up with the changes they've made, as well as revert to older versions of a chunk of code if they are stuck.
      </p>
-<p>
+     <p>
      Git is a type of version control software that allows for a central, primary repository and as many "branches" off that repository as necessary. From this master repository, a developer can take files off of a larger project, change those files, and then merge them with the master repository.
-</p>
+      </p>
      GitHub provides an online space to store a central repository so that multiple people can work on a project at once. Let's draw an analogy to painting. Let's say three artists are working on one painting of a person. One artist is responsible for painting the head, one for the body, and one for the clothes.
-<p>
+      <p>
      Now, "traditionally," these artists would have to work from the same painting, passing around the same piece of canvas and adding to it. If, however, these artists had a GitHub analog, they would each be able to download a copy of that painting to their own personal canvas, add to it, and then merge that painting with the primary canvas. This lets them work all at once.
 
      This is the primary advantage of GitHub.
     </p>
-
-  </section>
+   </section>
+  </div>
 </main>
+</html>
+
