@@ -11,70 +11,19 @@
  margin-bottom: 20px;
 }
 
-
-
-
-
-/*html, body{
-  font-family: Lora;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-color: #FFF7EC;
+nav{
+  margin-top: -30px;
 }
 
-#header {
-  width: 80em;
-  height: 150px;
-  background-color: #CCF1FF;
-  box-shadow: 1px 5px 3px #888888;
-  margin: auto;
-  margin-top: -15px;
-}
-
-#header h1 {
-  clear: right;
-  float: left;
-  margin-left: 3%;
-  margin-top: 4%;
-}
-
-#header ul {
-  list-style-type: none;
-  width: 70%;
-  margin: auto;
-  display: block;
-}
-
-#header ul li a{
-  text-decoration: none;
-  color: #92A7B2;
-  background-color: white;
-  float: left;
-  margin-left: 165px;
-  width: 20%;
-  text-align: center;
-  margin-top: 135px;
-  border-width: 2px;
-  border-style: solid;
-}
-
-#container{
-  width:79em;
-  margin: auto;
-  border-width: 2px;
-  border-style: solid;
+.container-fluid{
   background-color: white;
 }
 
-#content{
-  width: 65%;
-  margin: auto;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active {
+  background-color: white;
 }
 
-#sidebar{
-  display: inline-block;
-  margin-left: 50px;
-  float: left;
-  margin-top: -320px;
-}*/
+li:hover {
+  background-color: #eee;
+}
+
